@@ -1,0 +1,17 @@
+services:
+  cuda-python-container:
+    image: nvidia/cuda:12.6.3-cudnn-devel-ubuntu22.04
+    container_name: cuda-python-container
+    # runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    volumes:
+      - ./:/root
+    working_dir: /root
+    tty: true
+    stdin_open: true
+    command: ["fish"]
+    build:
+      context: .
+      dockerfile: Dockerfile
