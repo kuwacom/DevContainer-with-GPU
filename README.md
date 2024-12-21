@@ -9,3 +9,20 @@ VSCodeのDevContainerとは関係ありません
 - `NVIDIA Container Toolkit`
 - `docker`
 - `docker compose`
+
+# 内部構成
+### パッケージバージョン
+- `cuda` - `12.6.3`
+- `cudnn` - `12.6.3`
+- `python` - `3.10`
+
+### インストール済みパッケージ情報
+- `fish`
+- `curl`
+- `wget`
+- `git`
+- `python3.10-venv`
+- `python3.10-distutils`
+
+### その他情報
+shell - `fish`
