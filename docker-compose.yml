@@ -2,7 +2,7 @@ services:
   cuda-python-container:
     image: nvidia/cuda:12.6.3-cudnn-devel-ubuntu22.04
     container_name: cuda-python-container
-    # runtime: nvidia
+    # runtime: nvidia # versionによっては必要かも
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
       - NVIDIA_DRIVER_CAPABILITIES=compute,utility
