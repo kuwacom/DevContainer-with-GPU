@@ -1,0 +1,2 @@
+# DevContainer-with-GPU
+Dockerを使ってGPUが必要なPythonプロジェクトのworkspaceを作成する VSCodeのDevContainerとは関係ありません
