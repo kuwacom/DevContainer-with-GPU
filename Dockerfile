@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Install required dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    python3.10 python3.10-venv python3.10-distutils curl wget fish git \
+    python3.10 python3.10-venv python3.10-distutils build-essential python3-dev cython3 curl wget fish git \
     && rm -rf /var/lib/apt/lists/*
 
 # Set Python 3.10 as default

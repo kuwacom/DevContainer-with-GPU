@@ -21,6 +21,9 @@ VSCodeのDevContainerとは関係ありません
 - `curl`
 - `wget`
 - `git`
+- `build-essential`
+- `python3-dev`
+- `cython3`
 - `python3.10-venv`
 - `python3.10-distutils`
 
